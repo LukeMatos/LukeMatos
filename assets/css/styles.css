@@ -1,0 +1,176 @@
+body {
+    margin:0;
+    font-family: Helvetica, Arial
+    /* background-color: #1b151d */
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Helvetica, Arial;
+    color: white;
+}
+
+header .menu {
+    width: 30px;
+    height: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor:pointer;
+}
+
+header .menu-line {
+    height: 3px;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+
+}
+
+.container .info {
+    color: white;
+}
+.container .info .profession {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 19px;
+
+}
+
+.container .info .name {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 10px 0px 30px;
+
+}
+
+.container .leftside {
+    background-color: #1B151D;
+    flex:1;
+    display:flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+.container .rightside {
+    background-color: rgb(82, 63, 38);
+    flex:1;
+    background-image: url(../../images/LUK_6230\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: fill;
+}
+
+.container .info .buttons a {
+    display: inline-block;
+    background-color: #997798;
+    color: white;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.container .info .buttons a:hover {
+    opacity:0.8
+}
+
+.container .info .buttons a.light {
+    background-color: white;
+    color:black;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color:#997798;
+    font-weight: normal;
+    padding:20px;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+    header {
+        position: initial;
+        background-color: #1B151D;
+    }
+
+
+    .container {
+        flex-direction: column;
+        height: calc(100vh - 66px);
+    }
+
+    .container .leftside {
+        flex:none;
+        padding: 30px 20px;
+        display:flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer {
+        position: initial;
+        background-color: #1B151D;
+        color: white;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 450px) {
+    .container .leftside .info .name {
+        font-size: 50px;
+    }
+
+    .container .leftside .info .profession {
+        font-size: 16px;
+    }
+
+    .container .info .buttons a {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 20px 20px;
+
+    }
+}
+
